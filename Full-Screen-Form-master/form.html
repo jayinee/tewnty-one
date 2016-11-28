@@ -1,0 +1,301 @@
+<html>
+  <head>
+    <title>Full Screen Form Concept</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="https://use.fontawesome.com/20c3de4c0f.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="formWrapper">
+        <div class="title">
+          <h1>Project Worksheet</h1>
+          <div class="title-icons">
+            <a class="" href="#">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              <span>Previous Demo</span>
+            </a>
+            <a class="" href="#">
+              <i class="fa fa-tint" aria-hidden="true"></i>
+              <span>Back To Article</span>
+            </a>
+            <a class="" href="#">
+              <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+              <span>This is a demo for a full-screen form.</span>
+            </a>
+          </div>
+        </div>
+        <form id="websiteForm">
+          <ul class="form-inputs">
+            <li class="question-one active">
+              <label>What's your name?</label>
+              <input type="text" placeholder="Imanuel Gittens" id="fullName"  required/>
+            </li>
+            <li class="question-two">
+              <label>What's your Email Address?</label>
+              <input type="email" placeholder="name@email.com"  id="email" required/>
+            </li>
+            <li class="question-three">
+              <label>What's your priority for your new website?</label>
+              <div class="web-priority">
+                <div>
+                  <input type="radio" name="websitePriority" class="priority" id="conversion" value="conversion" required checked/>
+                  <label for="conversion"><img src="images/conversion.svg" /></label>
+                </div>
+                <div>
+                  <input type="radio" name="websitePriority" class="priority" id="social" value="social" required/>
+                  <label for="social"><img src="images/social.svg" /></label>
+                </div>
+                <div>
+                  <input type="radio" name="websitePriority" class="priority" id="mobile" value="mobile" required/>
+                  <label for="mobile"><img src="images/mobile.svg" /></label>
+                </div>
+              </div>
+            </li>
+            <li class="question-four">
+              <label>Choose a color for your website.</label>
+              <div class="choose-color">
+                <div class="placeholder" id="colorChoices">
+                  <div class="color">
+                    <!-- placeholder color shows here -->
+                  </div>
+                  <div class="color-code">
+                    <span>
+                      <!-- placeholder color code shows here -->
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <select id="websiteColor">
+                <option value="#588c75" selected>#588c75</option>
+                <option value="#b0c47f">#b0c47f</option>
+                <option value="#f3e395">#f3e395</option>
+                <option value="#f3ae73">#f3ae73</option>
+                <option value="#da645a">#da645a</option>
+                <option value="#79a38f">#79a38f</option>
+                <option value="#c1d099">#c1d099</option>
+                <option value="#f5eaaa">#f5eaaa</option>
+                <option value="#f5be8f">#f5be8f</option>
+                <option value="#e1837b">#e1837b</option>
+                <option value="#9bbaab">#9bbaab</option>
+                <option value="#d1dcb2">#d1dcb2</option>
+                <option value="#f9eec0">#f9eec0</option>
+                <option value="#f7cda9">#f7cda9</option>
+                <option value="#e8a19b">#e8a19b</option>
+                <option value="#bdd1c8">#bdd1c8</option>
+                <option value="#e1e7cd">#e1e7cd</option>
+                <option value="#faf4d4">#faf4d4</option>
+                <option value="#fbdfc9">#fbdfc9</option>
+                <option value="#f1c1bd">#f1c1bd</option>
+              </select>
+
+            </li>
+            <li class="question-five">
+              <label>Describe how you imagine your new website.</label>
+              <textarea rows="4" id="websiteDesc"></textarea>
+            </li>
+            <li class="question-six">
+              <label>What's your Budget?</label>
+              <input type="text" placeholder="$1000.00"  id="budget" required/>
+            </li>
+          </ul>
+        </form>
+        <!-- List of colors -->
+        <div class="color-listing" id="colorListing">
+          <ul>
+            <li class="color-thumb" data-value="#588c75">
+              <span>#588c75</span>
+            </li>
+            <li class="color-thumb" data-value="#b0c47f">
+              <span>#b0c47f</span>
+            </li>
+            <li class="color-thumb" data-value="#f3e395">
+              <span>#f3e395</span>
+            </li>
+            <li class="color-thumb" data-value="#f3ae73">
+              <span>#f3ae73</span>
+            </li>
+            <li class="color-thumb" data-value="#da645a">
+              <span>#da645a</span>
+            </li>
+            <li class="color-thumb" data-value="#79a38f">
+              <span>#79a38f</span>
+            </li>
+            <li class="color-thumb" data-value="#c1d099">
+              <span>#c1d099</span>
+            </li>
+            <li class="color-thumb" data-value="#f5eaaa">
+              <span>#f5eaaa</span>
+            </li>
+            <li class="color-thumb" data-value="#f5be8f">
+              <span>#f5be8f</span>
+            </li>
+            <li class="color-thumb" data-value="#e1837b">
+              <span>#e1837b</span>
+            </li>
+            <li class="color-thumb" data-value="#9bbaab">
+              <span>#9bbaab</span>
+            </li>
+            <li class="color-thumb" data-value="#d1dcb2">
+              <span>#d1dcb2</span>
+            </li>
+            <li class="color-thumb" data-value="#f9eec0">
+              <span>#f9eec0</span>
+            </li>
+            <li class="color-thumb" data-value="#f7cda9">
+              <span>#f7cda9</span>
+            </li>
+            <li class="color-thumb" data-value="#e8a19b">
+              <span>#e8a19b</span>
+            </li>
+            <li class="color-thumb" data-value="#bdd1c8">
+              <span>#bdd1c8</span>
+            </li>
+            <li class="color-thumb" data-value="#e1e7cd">
+              <span>#e1e7cd</span>
+            </li>
+            <li class="color-thumb" data-value="#faf4d4">
+              <span>#faf4d4</span>
+            </li>
+            <li class="color-thumb" data-value="#fbdfc9">
+              <span>#fbdfc9</span>
+            </li>
+            <li class="color-thumb" data-value="#f1c1bd">
+              <span>#f1c1bd</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-review" id="review">
+          <div class="reviewWrapper">
+            <h1>Review and Submit</h1>
+
+            <form id="review">
+
+              <div class="inputSection">
+                <label for="reviewName">What's your name?</label>
+                <input type="text" name="name" id="reviewName">
+              </div>
+              <div class="inputSection">
+                <label for="reviewEmail">What's your Email Address?</label>
+                <input type="email" name="email" id="reviewEmail">
+              </div>
+              <div class="inputSection">
+                <label>What's your priority for your new website?</label>
+                <div class="web-priority">
+                  <div>
+                    <input type="radio" name="reviewWebsitePriority"  class="reviewPriorities" id="reviewConversion" value="conversion" required/>
+                    <label for="reviewConversion"><img src="images/conversion.svg" /></label>
+                  </div>
+
+                  <div>
+                    <input type="radio" name="reviewWebsitePriority" class="reviewPriorities" id="reviewSocial" value="social" required/>
+                    <label for="reviewSocial"><img src="images/social.svg" /></label>
+                  </div>
+                  <div>
+                    <input type="radio" name="reviewWebsitePriority" class="reviewPriorities" id="reviewMobile" value="mobile" required/>
+                    <label for="reviewMobile"><img src="images/mobile.svg" /></label>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="inputSection">
+                <label>Choose a color for your website.</label>
+                <div class="choose-color">
+                  <div class="placeholder" id="reviewColorChoices">
+                    <div class="color">
+                      <!-- placeholder color show here -->
+                    </div>
+                    <div class="color-code">
+                      <span></span>
+                    </div>
+                  </div>
+
+                </div>
+                <select id="reviewWebsiteColor">
+                  <option value="#588c75">#588c75</option>
+                  <option value="#b0c47f">#b0c47f</option>
+                  <option value="#f3e395">#f3e395</option>
+                  <option value="#f3ae73">#f3ae73</option>
+                  <option value="#da645a">#da645a</option>
+                  <option value="#79a38f">#79a38f</option>
+                  <option value="#c1d099">#c1d099</option>
+                  <option value="#f5eaaa">#f5eaaa</option>
+                  <option value="#f5be8f">#f5be8f</option>
+                  <option value="#e1837b">#e1837b</option>
+                  <option value="#9bbaab">#9bbaab</option>
+                  <option value="#d1dcb2">#d1dcb2</option>
+                  <option value="#f9eec0">#f9eec0</option>
+                  <option value="#f7cda9">#f7cda9</option>
+                  <option value="#e8a19b">#e8a19b</option>
+                  <option value="#bdd1c8">#bdd1c8</option>
+                  <option value="#e1e7cd">#e1e7cd</option>
+                  <option value="#faf4d4">#faf4d4</option>
+                  <option value="#fbdfc9">#fbdfc9</option>
+                  <option value="#f1c1bd">#f1c1bd</option>
+                </select>
+              </div>
+              <div class="inputSection">
+                <label>Describe how you imagine your new website.</label>
+                <textarea rows="4" id="reviewDesc"></textarea>
+              </div>
+              <div class="inputSection">
+                <label>What's your Budget?</label>
+                <input type="text" id="reviewBudget" required/>
+              </div>
+
+              <div class="inputSection">
+
+                <input class="finish" type="submit" value="Send Answers"/>
+              </div>
+
+
+
+            </form>
+          </div>
+
+
+        </div>
+
+        <div class="form-controls">
+          <div class="progress-count">
+            <span class="current">1</span>
+            <span class="separator">/</span>
+            <span class="total">6</span>
+          </div>
+          <div class="progress-thumbs">
+            <ul>
+              <li class="first">
+                <label><i class="fa fa-circle" aria-hidden="true"></i></label>
+              </li>
+              <li class="second">
+                <label><i class="fa fa-circle" aria-hidden="true"></i></label>
+              </li>
+              <li class="third">
+                <label><i class="fa fa-circle" aria-hidden="true"></i></label>
+              </li>
+              <li class="fourth">
+                <label><i class="fa fa-circle" aria-hidden="true"></i></label>
+              </li>
+              <li class="fifth">
+                <label><i class="fa fa-circle" aria-hidden="true"></i></label>
+              </li>
+              <li class="sixth">
+                <label><i class="fa fa-circle" aria-hidden="true"></i></label>
+              </li>
+            </ul>
+          </div>
+          <div class="continue">
+            <button class="next" onclick="formNavigation()">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

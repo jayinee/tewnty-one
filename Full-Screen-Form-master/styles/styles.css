@@ -1,0 +1,434 @@
+/*Utility Classes*/
+
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+input::-webkit-input-placeholder{
+  color:#35383E;
+}
+
+input::-moz-placeholder{
+  color:#35383E;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #35383E;
+}
+
+input::-ms-input-placeholder{
+  color:#35383E;
+}
+
+.container{
+  height:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding:0;
+  margin:0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,ol,li{
+  padding:0;
+  margin: 0;
+}
+
+input, textarea{
+  border:none;
+  background-color: transparent;
+  line-height:36px;
+
+}
+
+body{
+  padding:0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.required{
+  border: 2px solid #C93A2A!important;
+}
+
+
+
+/*End Utility Classes*/
+
+
+
+.formWrapper{
+  width:100%;
+  height: 100%;
+  position: relative;
+  background-color: #3b3f45;
+  color:#fff;
+  overflow: auto;
+}
+
+/*Form Title Styles*/
+
+.title{
+  padding: 40px;
+}
+
+.title h1{
+  font-size: 2em;
+}
+
+.title-icons{
+  margin-top: 20px;
+}
+
+.title-icons a{
+  color:#222;
+  padding:10px;
+  font-size: 22px;
+  position: relative;
+}
+
+.title-icons span{
+  display:none;
+  color:#888;
+  font-size: 14px;
+}
+
+.title-icons a:hover{
+  color: #fff;
+}
+
+.title-icons a:hover > span{
+  display: block;
+  position: absolute;
+  left: 0;
+  padding:10px;
+  width:300px;
+  font-weight: 700;
+}
+/*End Form Title Styles*/
+
+/*Form Styles*/
+
+ul.form-inputs{
+  list-style-type: none;
+}
+
+.form-inputs li{
+  position: absolute;
+  top:-5000px;
+  left: 20%;
+  transition: 1s;
+}
+
+.form-inputs li.active{
+  top:40%;
+  width:60%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.form-inputs li label{
+  display: block;
+  font-size:36px;
+  font-weight:900;
+  margin-bottom: 20px;
+}
+
+.form-inputs input[type="text"], input[type="email"]{
+  padding: 10px 0;
+  font-size:50px;
+  color: #fff;
+  border-bottom:2px solid #333;
+  width:100%;
+  font-weight: bold;
+}
+
+#email{
+  color:#fff;
+}
+
+.form-inputs textarea{
+  border: 2px solid #333;
+  font-size: 36px;
+  color: #fff;
+  width:100%;
+  font-weight: bold;
+  line-height: normal;
+}
+
+ div.color-listing{
+  position: fixed;
+  top: -5000px;
+  display: block;
+  overflow: auto;
+  background-color: #3B3F45;
+  z-index: 2000;
+  transition: 1s;
+}
+
+div.color-listing ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+div.color-listing ul li{
+  width:20%;
+  padding-top:5%;
+  border-radius: 3px;
+  margin: 20px;
+}
+
+div.color-listing ul li span{
+  width:100%;
+  padding: 5px 10px;
+  background-color: #282B30;
+  display: block;
+}
+
+.form-inputs select{
+  display: none;
+}
+
+.form-inputs li input[type="radio"]{
+  display: none;
+}
+
+.form-inputs li input[type="radio"]:checked ~ label{
+  opacity: 1;
+}
+
+.form-inputs li div.web-priority div{
+  display: inline-block;
+}
+
+.form-inputs li div.web-priority label{
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.form-inputs li div.web-priority label:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+ div.choose-color {
+  position: relative;
+
+}
+
+div.choose-color .placeholder{
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  border: 2px solid #999;
+  background-color: #000;
+  text-align: center;
+}
+
+div.choose-color .placeholder .color{
+  /*background-color: #999;*/
+  margin-top: 3px;
+  width:140px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.choose-color .placeholder .color-code{
+   padding-top: 15px;
+   font-weight:900;
+   font-size:11px;
+}
+
+
+/*End Form Style*/
+
+/*Form Review Styles*/
+
+div.form-review{
+  position: absolute;
+  top: -5000px;
+  background-color: #FFFFD4;
+  z-index: 2001;
+  width:100%;
+  overflow: auto;
+  transition: 1s;
+}
+
+
+div.form-review h1{
+  color: #3A4348;
+  margin:70px 0;
+}
+
+div.form-review .reviewWrapper{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+div.form-review .reviewWrapper label{
+  color: #3A4348;
+  display: block;
+  font-size:22px;
+  font-weight:900;
+  margin-bottom: 20px;
+}
+
+div.form-review input[type="text"], input[type="email"], textarea{
+  padding: 10px 0;
+  font-size:50px;
+  color: #858469;
+  border-bottom:2px solid #E6E5C3;
+  margin-bottom:20px;
+  width:100%;
+  font-weight: bold;
+}
+
+div.form-review input[type="radio"]{
+  display: none;
+  margin-bottom:20px;
+}
+
+div.form-review .web-priority div{
+  display: inline-block;
+
+}
+
+div.form-review .web-priority label{
+  opacity: 0.5;
+}
+
+div.form-review input[type="radio"]:checked ~ label{
+  opacity: 1;
+}
+
+
+
+div.form-review input[type="submit"]{
+  margin-top: 20px;
+  margin-bottom: 60px;
+  float: right;
+  line-height: normal;
+  background-color: transparent;
+  padding:15px 40px;
+  border: 3px solid #222;
+  color:#222;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight:700;
+}
+
+div.form-review select{
+ margin-bottom:20px;
+ display: none;
+}
+
+div.form-review input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: #222;
+  color:#fff;
+}
+
+/*End form review styles*/
+
+/*Form controls styles*/
+
+.form-controls{
+  position: absolute;
+  right: 0;
+  top:0;
+  padding:40px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.progress-count{
+  text-align: center;
+}
+
+.progress-count span{
+  font-size:35px;
+  color:#222;
+  font-weight:700;
+}
+
+.progress-count span.separator{
+  color: #333;
+  font-weight: 400;
+}
+
+.progress-thumbs{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.progress-thumbs ul{
+  list-style-type: none;
+}
+
+.progress-thumbs ul li{
+  text-align: center;
+  padding: 7px 5px;
+  color:#32363B;
+}
+
+.continue button{
+  background-color: transparent;
+  padding:15px 40px;
+  border: 3px solid #222;
+  color:#222;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight:700;
+}
+
+.continue button:hover{
+  cursor: pointer;
+  background-color: #222;
+  color:#fff;
+}
+
+/*Thank you page styles*/
+
+.thankyouWrapper{
+  width:100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color:#fff;
+  text-align: center;
+  background-color: #3B3F45;
+}
+
+.restart{
+  background-color: transparent;
+  padding:15px 40px;
+  border: 3px solid #222;
+  color:#222;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight:700;
+}
+
+.restart:hover{
+  cursor: pointer;
+  background-color: #222;
+  color:#fff;
+}
